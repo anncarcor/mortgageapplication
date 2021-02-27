@@ -4,6 +4,17 @@
   <artifactId>mortgageplan</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
+ <properties>
+   <maven.compiler.source>1.7</maven.compiler.source>
+   <maven.compiler.target>1.7</maven.compiler.target>
+   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>11</java.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+        <junit-platform.version>5.3.1</junit-platform.version>
+ </properties>
+  
 
    <build>
     <plugins>
@@ -17,16 +28,26 @@
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <version>2.22.0</version>
             </plugin>
+            
             <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>exec-maven-plugin</artifactId>
+            <version>1.2.1</version>
+            <configuration>
+                <mainClass>com.example.caroline.Mortgageplan</mainClass>
+            </configuration>
+        </plugin>
+    
             
 <!-- Build an executable JAR -->
+            <plugin>
 <groupId>org.apache.maven.plugins</groupId>
 <artifactId>maven-jar-plugin</artifactId>
 <version>2.4</version>
 <configuration>
 <archive>
 <manifest>
-<mainClass>com.example.caroline.mortgageplan</mainClass>
+<mainClass>com.example.caroline.Mortgageplan</mainClass>
 </manifest>
 </archive>
 </configuration>
@@ -63,15 +84,5 @@
     
   </dependencies>
   
-  <properties>
-   <maven.compiler.source>1.7</maven.compiler.source>
-   <maven.compiler.target>1.7</maven.compiler.target>
-   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <java.version>11</java.version>
-        <maven.compiler.source>${java.version}</maven.compiler.source>
-        <maven.compiler.target>${java.version}</maven.compiler.target>
-        <junit-platform.version>5.3.1</junit-platform.version>
- </properties>
-  
+ 
 </project>
