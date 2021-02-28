@@ -86,8 +86,8 @@ public static void main(String[]args) throws IOException {
 	    			Prospect prospect = prospectList.get((i));
 	    			
 	    			System.out.println("Prospect " + (i+1) + ": " + prospect.getCustomerName() + 
-	    					" wants to borrow  " + prospect.getTotalLoan() + "€ for a period of "  + prospect.getYearsOfLoan() + 
-	    					" years and pay " + df.format(prospect.getFixedMonthlyPayment()) +"€ per month.\n");
+	    					" wants to borrow  " + prospect.getTotalLoan() + "euro for a period of "  + prospect.getYearsOfLoan() + 
+	    					" years and pay " + df.format(prospect.getFixedMonthlyPayment()) +"euro per month.\n");
 	    			}
 	    	
 	  }
