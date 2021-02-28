@@ -86,8 +86,8 @@ public static void main(String[]args) throws IOException {
 	    			Prospect prospect = prospectList.get((i));
 	    			
 	    			System.out.println("Prospect " + (i+1) + ": " + prospect.getCustomerName() + 
-	    					" wants to borrow  " + prospect.getTotalLoan() + "€ for a period of "  + prospect.getYearsOfLoan() + 
-	    					" years and pay " + df.format(prospect.getFixedMonthlyPayment()) +"€ per month.\n");
+	    					" wants to borrow  " + prospect.getTotalLoan() + "â‚¬ for a period of "  + prospect.getYearsOfLoan() + 
+	    					" years and pay " + df.format(prospect.getFixedMonthlyPayment()) +"â‚¬ per month.\n");
 	    			}
 	    	
 	  }
@@ -127,7 +127,7 @@ public static void main(String[]args) throws IOException {
 	
 	
 	
-	//Method to calculate the fixed monthly payment according to provided formula
+	//Method to calculate the fixed monthly payment according to formula provided in brief
 public static double calculateFixedPayment(double totalLoan, double interestMonth, double powerOfResult) {
 		
 		double power = interestMonth * powerOfResult; 
