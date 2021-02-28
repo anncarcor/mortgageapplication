@@ -6,7 +6,7 @@ import org.junit.Test;
 import mortgageplan.Mortgageplan;
 
 public class TestCalculateFixedMonthlyPayment {
-
+//Test to check that the formula works
 	@Test
 	public void test() {
 double output = Mortgageplan.calculateFixedPayment(10, 1, 2);
