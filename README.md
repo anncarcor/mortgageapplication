@@ -9,7 +9,7 @@ The CEO of the bank has given the requirement like this:
 "Given a total loan of X € and a fixed yearly interest rate of Y %. The customer wants to pay the same amount each month for Z
 years. How much should the customer pay each month to pay off the whole debt?"
 
-
+This is a java-program that uses Maven as a build tool and therefore it requires an installation of that before you can build and run the program. 
 To try out the build, issue the following at the command line:
 
 mvn compile
@@ -26,4 +26,4 @@ For example, given the minimal pom.xml file from before, the JAR file will be na
 
 To execute the JAR file run:
 
-java -jar target/mortgageplan-0.0.01-SNAPSHOT.jar
+java -jar target/mortgageplan-0.0.1-SNAPSHOT.jar
